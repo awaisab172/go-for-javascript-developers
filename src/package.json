@@ -4,11 +4,15 @@
   "description": "",
   "dependencies": {
     "gitbook-cli": "^2.3.2",
-    "gitbook-plugin-scripts": "^1.0.2"
+    "gitbook-plugin-scripts": "^1.0.2",
+    "snyk": "^1.316.1"
   },
   "devDependencies": {},
   "scripts": {
     "build": "gitbook build",
-    "serve": "gitbook serve"
-  }
+    "serve": "gitbook serve",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
+  },
+  "snyk": true
 }
